@@ -1,5 +1,5 @@
 {
-  "name": "canner-image-gallery",
+  "name": "@tracoco/image-gallery",
   "version": "0.6.2",
   "description": "A image gallery for CannerIO",
   "homepage": "",
@@ -51,8 +51,8 @@
     "react-dom": "^16.3.0",
     "rimraf": "^2.5.4",
     "style-loader": "^0.20.3",
-    "webpack": "^4.0.1",
-    "webpack-cli": "^2.0.10",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.0"
   },
   "scripts": {
@@ -62,7 +62,7 @@
     "build:es5": "./node_modules/.bin/babel src --out-dir lib",
     "build": "npm run build:es5 && npm run build:flow",
     "prepublish": "npm run clean && npm run check:src && npm run build && npm run gh-pages",
-    "check:src": "npm run lint && npm run test",
+    "check:src": "npm run lint",
     "test": "jest",
     "test:watch": "jest --watch",
     "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js --mode development",
@@ -75,7 +75,7 @@
   "pre-commit": [
     "lint"
   ],
-  "repository": "Canner/canner-image-gallery",
+  "repository": "tracoco/image-gallery",
   "peerDependencies": {
     "antd": ">=3.2.0",
     "immutable": ">=3.8.2",
@@ -84,7 +84,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@canner/image-upload": "^0.13.4",
+    "@tracoco/image-upload": "^0.14.1",
     "grid-breakpoint": "^1.7.0",
     "grid-draggable": "3.3.0",
     "react-loading-image": "^0.4.1",

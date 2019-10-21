@@ -4,7 +4,7 @@ import * as React from "react";
 import GridDraggable, { Section } from "grid-draggable";
 import {Modal} from 'antd';
 import GridBreakpoint from "grid-breakpoint";
-import ImageUpload from "@canner/image-upload";
+import ImageUpload from "@tracoco/image-upload";
 import Item from "./item";
 import Add from "./add";
 
